@@ -9,7 +9,7 @@ html {
 body {
     font-family: 'Maven Pro', sans-serif;
     scroll-behavior: smooth;
-    background-color: #343a40;
+    background-color: black;
     color: #e9ecef;
 }
 
@@ -30,15 +30,16 @@ body {
 
 /* NavBar styles*/
 .nav-bar {
-  background-color: #343a40;
+  background-color: black;
 }
 #navbar-default {
-  background-color: #343a40;
+  background-color: black;
 }
 
 .nav-text {
   color: #33d9b2;
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: 500;
   text-decoration: none;
   position: relative;
   padding-bottom: 5px;
@@ -74,7 +75,7 @@ body {
 .name {
   color: #ffffff;
   font-size: 40px;
-  font-weight: 900;
+  font-weight: 800;
 }
 .name span {
   color: #33d9b2;
@@ -118,8 +119,13 @@ body {
 }
   /**/
 
+  /* .head {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.836);
+  } */
+
 .profile-pic {
-  border-radius: 50%;
+  /* border-radius: 50%; */
   height: 50%;
   width: 50%;
   background-size: cover;
