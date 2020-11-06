@@ -1,1 +1,1 @@
-web: gunicorn truly.wsgi --log-file -
+web: gunicorn charaf_portfolio.wsgi --log-file -
