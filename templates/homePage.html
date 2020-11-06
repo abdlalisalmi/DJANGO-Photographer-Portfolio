@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container">
+            <div class="row header justify-content-center mt-8">
+                <div class="col-lg-4 profile-pic shadow-lg" style="background-image: url('{% static 'img/charaf.jpg' %}')">
+                    {% comment %} <img class="shadow-lg" src="{% static 'img/charaf.jpg' %}" width=60%> {% endcomment %}
+                </div>
+                <div class="col-lg-8">
+                    <p class="name">Hey, I'm <span>Charaf Lahib</span></p>
+                    <p>Career portfolios are used to plan, organize and document education,
+                     work samples and skills. People use career portfolios to apply for jobs, 
+                     apply to college or training programs. They are more in-depth than a resume, 
+                     which is used to summarize the above in one or two pages</p>
+
+                    <p class="display-5">Say hi to me on these social networks:</p>
+                    <a href="https://www.facebook.com/charaf.lahib/" target="_blank" class="follow m-2">
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                    </a>
+                    <a href="https://www.instagram.com/lahib_photography/" target="_blank" class="follow m-2">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/charaf-lahib-880460187/" target="_blank" class="follow m-2">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="https://500px.com/p/charaflahib" target="_blank" class="follow m-2">
+                        <i class="fab fa-500px fa-2x"></i>
+                    </a>
+                    <a href="mailto:Charaf.lahib@gmail.com" target="_blank" class="follow m-2">
+                        <i class="fa fa-envelope fa-2x"></i>
+                    </a>
+                </div>
+                {% comment %} <div class="col-12">
+                    <div class="words justify-content-center">
+                        <span>Street</span>
+                        <span>Nature</span>
+                        <span>Animals</span>
+                        <span>Cycling</span>
+                        <span>Everything</span>
+                    </div>
+                </div> {% endcomment %}
+                <div class='scrolldown'>
+                    <div class="chevrons"></div>
+                </div>
+            </div>
+
+        <div class="mt-4" id="gallery">
+            {% include 'gallery.html' %}
+        </div>
+
+        <div class="row my-5">
+            <div class="col-12 text-center">
+                <p class="display-4" id="contact-me">Contact Me:</p>
+                <a href="https://www.facebook.com/charaf.lahib/" target="_blank" class="follow m-2">
+                    <i class="fab fa-facebook-square fa-2x"></i>
+                </a>
+                <a href="https://www.instagram.com/lahib_photography/" target="_blank" class="follow m-2">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/charaf-lahib-880460187/" target="_blank" class="follow m-2">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://500px.com/p/charaflahib" target="_blank" class="follow m-2">
+                    <i class="fab fa-500px fa-2x"></i>
+                </a>
+                <a href="mailto:Charaf.lahib@gmail.com" target="_blank" class="follow m-2">
+                    <i class="fa fa-envelope fa-2x"></i>
+                </a>
+            </div>
+        </div>
+            
+            
+            
+
+    </div>
+{% endblock content %}
+{% block script%}
+{% endblock script%}

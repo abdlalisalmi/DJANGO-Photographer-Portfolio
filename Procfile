@@ -1,0 +1,1 @@
+web: gunicorn truly.wsgi --log-file -

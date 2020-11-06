@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg fixed-top m-0 p-0">{% load static %}
+    <div class="container nav-bar pt-2">
+
+        <a class="display-4 logo" href="/">
+            <img src="{% static 'img/logo.svg' %}" width="40px">
+            Lahib Photography
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="ni ni-align-center text-white"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar-default">
+            <div class="navbar-collapse-header">
+                <div class="row">
+                    <div class="col-8 collapse-brand">
+                        <a href="javascript:void(0)" class="display-4 name" style="color:#ecf0f1">
+                            <img src="{% static 'img/logo.svg' %}" width="40px"> Lahib Photography
+                        </a>
+                    </div>
+                    <div class="col-4 collapse-close text-right pt-2">
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item pl-2">
+                        <a class="nav-link pl-0 pr-0" href="#gallery">
+                            <span class="nav-text">Gallery</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pl-2" href="#contact-me">
+                            <span class="nav-text">Contact Me</span>
+                        </a>
+                    </li>
+            </ul>
+            
+        </div>
+    </div>
+</nav>
