@@ -2,12 +2,12 @@
     <div class="container nav-bar pt-2">
 
         <a class="display-4 logo" href="/">
-            <img src="{% static 'img/logo.svg' %}" width="40px">
+            {% comment %} <img src="{% static 'img/logo.svg' %}" width="40px"> {% endcomment %}
             Charaf Lahib
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="ni ni-align-center text-white"></i>
+            <i class="fa fa-ellipsis-v text-white"></i>
         </button>
 
         <div class="collapse navbar-collapse" id="navbar-default">
@@ -15,7 +15,7 @@
                 <div class="row">
                     <div class="col-8 collapse-brand">
                         <a href="javascript:void(0)" class="" style="color:#ecf0f1; font-size:24px; font-weight: 600;">
-                            <img src="{% static 'img/logo.svg' %}" width="40px"> Charaf Lahib
+                            Charaf Lahib
                         </a>
                     </div>
                     <div class="col-4 collapse-close text-right pt-2">
