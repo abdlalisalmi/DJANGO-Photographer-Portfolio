@@ -1,51 +1,16 @@
-
-
-	<div class="-fx-image-gal">
-		<div class="-fx-gal-item">
-			<div class="-fx-gal-image-thumb" tabindex="1">
-				<a href="https://codepen.io/aledebarba" target="_blank">
-					<img src="https://picsum.photos/id/237/300/300" />
-				</a>
-			</div>
-		</div><!-- /-fx-gal-item -->
-
-		<div class="-fx-gal-item">
-			<div class="-fx-gal-image-thumb" tabindex="1">
-				<a href="https://codepen.io/aledebarba" target="_blank">
-					<img src="https://picsum.photos/id/238/300/300" />
-				</a>
-			</div>
-		</div><!-- /-fx-gal-item -->
-
-		<div class="-fx-gal-item">
-			<div class="-fx-gal-image-thumb" tabindex="1">
-				<a href="https://codepen.io/aledebarba" target="_blank">
-					<img src="https://picsum.photos/id/39/300/300" />
-				</a>
-			</div>
-		</div><!-- /-fx-gal-item -->
-
-		<div class="-fx-gal-item">
-			<div class="-fx-gal-image-thumb" tabindex="1">
-				<a href="https://codepen.io/aledebarba" target="_blank">
-					<img src="https://picsum.photos/id/240/300/300" />
-				</a>
-			</div>
-		</div><!-- /-fx-gal-item -->
-
-		<div class="-fx-gal-item">
-			<div class="-fx-gal-image-thumb" tabindex="1">
-				<a href="https://codepen.io/aledebarba" target="_blank">
-					<img src="https://picsum.photos/id/341/300/300" />
-				</a>
-			</div>
-		</div><!-- /-fx-gal-item -->
-
-		<div class="-fx-gal-item">
-			<div class="-fx-gal-image-thumb" tabindex="1">
-				<a href="https://codepen.io/aledebarba" target="_blank">
-					<img src="https://picsum.photos/id/142/300/300" />
-				</a>
-			</div>
-		</div><!-- /-fx-gal-item -->
-	</div><!-- /gallery -->
+<div class="title mt-lg-0 mt-8">
+	<h1><span>Photo Gallery</span></h1>
+</div>
+<div class="cont">
+	{% for image in images %}
+		<figure>
+			<a href="{{image.image_url}}">
+				<img src="{{image.image_link}}">
+			</a>
+			<figcaption>
+				<span class="img-title">{{image.image_title}}</span>
+				<span class="img-description">{{image.image_description}}</span>
+			</figcaption>
+		</figure>
+	{% endfor %}
+</div>

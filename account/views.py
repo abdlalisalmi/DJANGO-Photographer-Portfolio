@@ -22,7 +22,7 @@ def login(request):
         )
         if user:
             login_user(request, user)
-            return redirect('homePage')
+            # return redirect('homePage')
         return render(request, template_name, {'error': 'The username and password you entered did not match our records. Please double-check and try again.'})
 
     return render(request, template_name)

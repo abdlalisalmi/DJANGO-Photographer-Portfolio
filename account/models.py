@@ -40,3 +40,28 @@ class Account(models.Model):
 def create_user_account(sender, instance, created, **kwargs):
     if created:
         Account.objects.create(user=instance)
+
+
+class Information(models.Model):
+    full_name = models.CharField(max_length=100, blank=False, null=False)
+    description = models.TextField(blank=False, null=False)
+    cover_image = models.URLField(blank=True, null=True)
+
+    email = models.EmailField(max_length=255, blank=True, null=True)
+    facebook = models.URLField()
+    instagram = models.URLField()
+    linkedin = models.URLField()
+    px500 = models.URLField()
+
+    def __str__(self):
+        return self.full_name
+
+
+class Image(models.Model):
+    image_title = models.CharField(max_length=200, blank=False, null=False)
+    image_description = models.TextField()
+    image_link = models.URLField()
+    image_url = models.URLField()
+
+    def __str__(self):
+        return self.image_title

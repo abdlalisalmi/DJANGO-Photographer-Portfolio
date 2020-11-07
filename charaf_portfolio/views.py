@@ -1,6 +1,13 @@
 from django.shortcuts import render
+from account.models import Image, Information
 
 
 def homePage(request):
     template_name = 'homePage.html'
-    return render(request, template_name)
+    images = Image.objects.all()
+    info = Information.objects.first()
+    context = {
+        'images': images,
+        'info': info,
+    }
+    return render(request, template_name, context)

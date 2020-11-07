@@ -262,3 +262,11 @@ body {
 .follow:hover {
   color: #ffffff;
 }
+
+.abdlali {
+  color: #33d9b2;
+  transition: all .5s;
+}
+.abdlali:hover {
+  color: #ff5252;
+}
