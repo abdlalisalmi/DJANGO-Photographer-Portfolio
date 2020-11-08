@@ -83,7 +83,7 @@
    }
 }
 .cont figure figcaption span.img-description {
-	font-size: 14rem;
+	font-size: 14px;
 }
 @media (min-width: 376px) {
 	.cont figure figcaption span.img-description {
