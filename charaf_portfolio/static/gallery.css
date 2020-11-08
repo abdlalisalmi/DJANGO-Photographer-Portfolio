@@ -61,28 +61,33 @@
 	left: 0;
 	right: 0;
 	background: rgba(0, 0, 0, 0.65);
-	padding: 2rem 1rem;
+	padding: 10px 15px;
+	/* opacity: 0;
+	transition: all .5s; */
 }
+/* .cont:hover figure figcaption {
+	opacity: 1;
+} */
 .cont figure figcaption span {
 	color: #fff;
 	display: block;
 }
 .cont figure figcaption span.img-title {
-	font-size: 1.2rem;
-	font-weight: 700;
+	font-size: 18px;
+	font-weight: 600;
 	margin-bottom: 0.4rem;
 }
 @media (min-width: 376px) {
 	.cont figure figcaption span.img-title {
-		font-size: 1.5rem;
+		font-size: 18px;
    }
 }
 .cont figure figcaption span.img-description {
-	font-size: 0.9rem;
+	font-size: 14rem;
 }
 @media (min-width: 376px) {
 	.cont figure figcaption span.img-description {
-		font-size: 1rem;
+		font-size: 14px;
    }
 }
 .cont img {
