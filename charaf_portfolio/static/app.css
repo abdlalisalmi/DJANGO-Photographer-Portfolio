@@ -1,3 +1,8 @@
+
+:root {
+  --dark-mode: #000000;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +14,7 @@ html {
 body {
     font-family: 'Maven Pro', sans-serif;
     scroll-behavior: smooth;
-    background-color: black;
+    background-color: var(--dark-mode);
     color: #e9ecef;
 }
 
@@ -30,10 +35,10 @@ body {
 
 /* NavBar styles*/
 .nav-bar {
-  background-color: black;
+  background-color: var(--dark-mode);
 }
 #navbar-default {
-  background-color: black;
+  background-color: var(--dark-mode);
 }
 
 .nav-text {
@@ -83,13 +88,11 @@ body {
 
 /* Register Page*/
 .register-error {
-    color: #ff5252;
+    color: #ee6c6c;
     font-size: small;
     padding-left: 10px;
 }
-.show-password {
-    cursor: pointer;
-}
+
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
     background-color: #33d9b2!important;
   }
@@ -269,4 +272,52 @@ body {
 }
 .abdlali:hover {
   color: #ff5252;
+}
+
+.login-title {
+  font-size: 35px;
+  font-weight: 600;
+  color: rgb(190, 190, 190);
+}
+
+.login-card {
+  background-color: var(--dark-mode);
+  color: #ffffff;
+}
+.login-card input {
+  background-color: var(--dark-mode);
+  color: #fff;
+  border-radius: 10px;
+}
+.login-card input:focus {
+  background-color: var(--dark-mode);
+  color: #fff;
+}
+.login-card .input-group-text {
+  background-color: var(--dark-mode);
+  border-radius: 10px;
+}
+.show-password {
+  cursor: pointer;
+  border: solid #dddddd 1px;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.login-btn {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: #00cc9c;
+  width: 200px;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  margin-top: 15px;
+  transition: background-color .5s;
+}
+.login-btn:focus { outline:0 !important; }
+.login-btn:hover {
+  background-color: var(--dark-mode);
+  border: #00cc9c solid 2px;
 }
