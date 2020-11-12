@@ -1,5 +1,7 @@
 const showPassword = document.querySelector('.show-password');
 
+document.addEventListener('contextmenu', event => event.preventDefault());
+
 if (showPassword) {
     showPassword.addEventListener('click', () => {
         const passwordInput = document.querySelector('#password-input');
