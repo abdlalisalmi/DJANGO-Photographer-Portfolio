@@ -121,3 +121,20 @@
 .cont figure:hover img {
 	border-radius: 15px;
 }
+.show-more {
+	color: #ffffff;
+	font-weight: 500;
+	font-size: 18px;
+	background-color: #000000;
+	border: #00cc9c solid 2px;
+	padding: 5px;
+	width: 200px;
+	height: 45px;
+	border-radius: 15px;
+	margin-top: 15px;
+	transition: background-color .5s;
+}
+.show-more:hover {
+	color: #fff;
+	background-color: #00ffc356;
+}

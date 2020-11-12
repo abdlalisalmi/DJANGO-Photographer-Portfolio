@@ -1,16 +1,19 @@
-<div class="title mt-lg-0 mt-8">
-	<h1><span>Photo Gallery</span></h1>
-</div>
-<div class="cont">
-	{% for image in images %}
-		<figure>
-			<a href="{{image.image_url}}" target="_blank">
-				<img src="{{image.image_link}}">
-			</a>
-			<figcaption>
-				<span class="img-title">{{image.image_title}}</span>
-				<span class="img-description">{{image.image_description}}</span>
-			</figcaption>
-		</figure>
-	{% endfor %}
+<div class="row justify-content-center">
+	<div class="title mt-lg-0 mt-8 mb-4">
+		<h1><span>Photo Gallery</span></h1>
+	</div>
+	<div class="cont">
+		{% for image in images %}
+			<figure>
+				<a href="{{image.image_url}}" target="_blank">
+					<img src="{{image.image_link}}">
+				</a>
+				<figcaption>
+					<span class="img-title">{{image.image_title}}</span>
+					<span class="img-description">{{image.image_description}}</span>
+				</figcaption>
+			</figure>
+		{% endfor %}
+	</div>
+	<a href="{{info.instagram}}" class="col-8 text-center mt-4 mb-2 show-more">Show More</a>
 </div>

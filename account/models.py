@@ -65,3 +65,11 @@ class Image(models.Model):
 
     def __str__(self):
         return self.image_title
+
+
+class InstagramFeed(models.Model):
+    post_title = models.CharField(max_length=200, blank=False, null=False)
+    instagram_post_link = models.URLField()
+
+    def __str__(self):
+        return self.post_title
